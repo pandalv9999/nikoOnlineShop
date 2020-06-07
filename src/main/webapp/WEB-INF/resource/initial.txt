@@ -1,0 +1,38 @@
+Delete from product;
+
+insert into product (id, category, description, manufacturer, name, price, number, unit, pages) values (1, 'Disposable Mask', 'Description: Three Ply face mask contains three layers with each layer has very specific role. The outer layer is hydrophobic layer that prevents from water blood and body fluids. Middle level filters bacteria and its most important layer in 3 ply masks. Inner layer is hydrophilic layer which helps in absorbing water, sweat and spits. Melt blown is placed between non-woven fabric that generates high level static filtration for blocking micro dust and bacteria.
+Usage/Application: Protection against airborne infections like Corona & other Virus. Widely used in the Hospitals, Clinics, Industry (Chemical & Pharma) and General Public.
+Material: 3 Ply Non-Woven Soft Material with High Grade Plastic Nose Clip.
+Mask Securing Method: Ear loop mount.
+Size: Free Size.
+Packaging Type: box of 5 masks.
+Filter Media: High technology filter media with micro fine fibers & electrostatic charge gives maximum filtering efficiency.
+Color: Green, Medical blue.
+Quality Parameters: Each Mask is 100% Sterilized after packing(option available)
+Certification: CE and ISO22609:2004, ISO 9001:2015 certified.
+Features: Perfectly attach on to face;Protects Small Particles;Smooth Breathing;Soft and Skin Friendly;Efficient & Quality Filtration', 'Medi-Max', '3 Ply Mask', 1.5, 1000, 'pack of 5', 2);
+
+insert into product (id, category, description, manufacturer, name, price, number, unit, pages) values (2, 'Disposable Mask', 'Description: N Stands for "Non-oil" which means that you can use the mask in working environment however no oil particulates are present. As 95 stands for 95% efficiency. N95 protects from dust mist and fumes. The minimum size of 0.3 microns and large droplets cannot pass through barrier. Valve place a role of exhalation resistance that helps for easy breathing.
+Usage/Application: Protection against airborne infections like Corona & other Virus. Widely used in the Hospitals, Clinics, Industry (Chemical & Pharma) and General Public.
+Material: Non woven Melt blown Filter cloth.
+Mask Securing Method: Ear Loop Mount.
+Size: Free Size
+Packing Type: 25/50 pcs each box / Corrugated Box.Price is for each mask.
+Filter Media: High technology filter media with micro fine fibers & electrostatic charge gives maximum filtering efficiency. Filtering efficiency > 95% against solid particles complies ISI test requirements.
+Color: White, Yellow.
+Quality Parameters: Each Mask is 100% Sterilized after packing(option available).
+Certification: CE and ISO22609:2004, ISO 9001:2015 certified.
+Features: Made of high-quality material, safe, soft and comfortable. Protect you from airborne particulates and pollution.;Anti-virus transmission and Anti droplet transmission.;Polypropylene material performs well in high-humidity environments and is disposable for convenient clean-up.', 'Medi-Max', 'N95 Face Mask without Valve', 1.4, 1000, 'piece', 3);
+
+insert into product (id, category, description, manufacturer, name, price, number, unit, pages) values
+(3, 'Disposable Mask', 'Description: N Stands for "Non-oil" which means that you can use the mask in working environment however no oil particulates are present. As 95 stands for 95% efficiency. N95 protects from dust mist and fumes. The minimum size of 0.3 microns and large droplets cannot pass through barrier. Valve place a role of exhalation resistance that helps for easy breathing.
+Usage/Application: Protection against airborne infections like Corona & other Virus. Widely used in the Hospitals, Clinics, Industry (Chemical & Pharma) and General Public.
+Material: Non woven Melt blown Filter cloth.
+Mask Securing Method: Ear Loop Mount.
+Size: Free Size
+Packing Type: 25/50 pcs each box / Corrugated Box. Price is for each mask.
+Filter Media: High technology filter media with micro fine fibers & electrostatic charge gives maximum filtering efficiency. Filtering efficiency > 95% against solid particles complies ISI test requirements.
+Color: White, Yellow.
+Quality Parameters: Each Mask is 100% Sterilized after packing(option available).
+Certification: CE and ISO22609:2004, ISO 9001:2015 certified.
+Features: Reduces heat inside the mask.;Removes humidity.;Removes exhaled carbon dioxide from the mask thereby helping in easy breathing.;The Filters of valves are made of silicone.', 'Medi-Max', 'N95 Face Mask with Exaltation Valves', 1.7, 1000, 'piece', 6);
