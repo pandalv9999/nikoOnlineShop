@@ -28,7 +28,7 @@
         </li>
         <li>
             <p><i class="fa fa-envelope-o fa-2x"></i></p>
-            <p>pandalv9999@gmail.com</p>
+            <p>123456789@gmail.com</p>
         </li>
         <li>
             <p><i class="fa fa-phone fa-2x"></i></p>
@@ -36,5 +36,6 @@
         </li>
     </ul>
 </footer>
+<div class="signature">  Site developed by pandalv9999@gmail.com</div>
 </body>
 </html>

@@ -19,10 +19,15 @@
 <div class="about-us">
     <div class="about-us-text">
         <h1>About Us<br/><br/></h1>
-        <p>At Medi-Max, we strongly believe that " Technology should not be more precious than human life".<br/><br/></p>
-        <p>Since last two decades, Medi-Max has been continuously striving to provide efficient healthcare solutions.The journey began in 2003 with our first radiology center in V.S. Hospital Ahmedabad. This was followed by chain of several diagnostic centers in various cities like Jaipur and Surat.<br/><br/></p>
-        <p>Today Medi- Max has established itself as a trusted name in the medical fraternity. Our mission is to strive to make reliable and quality products for all, while improving overall health of the community.<br/><br/></p>
-        <p>As a part of our efforts to contribute to the Nation's present need of COVID-19 products, Medi-Max has expanded its manufacturing facilities for production of N-95 Respirators (Face Mask), 3 Ply Face Mask and Alcohol based Hand Sanitizers.<br/><br/></p>
+        <p>Our company wants to be the most reliable health care platform which connects the high quality products from India to US Europe and other parts of the world. Our main goal is to improve the health care system by providing all essential health care items at an affordable price to the rest of the world who are in need of good quality medical and sanitizing equipment. Our vision is to provide the highest quality of masks, and build long-term relationships, with the customers we serve.<br><br></p>
+        <h1>Core values<br><br></h1>
+        <p>We will be only manufacturing and trading in high quality medical products such as masks and sanitizer and then eventually grow out listing with more equipment such as PPE kits and 3ply masks. We are trying to get as many possible certifications for products so customers are satisfied with what they are buying. We would not like to overprice our products like some other companies are doing in times like covid19. We are trying to make it available at the lowest possible price. Niko Health care is guided by the following values.<br><br></p>
+        <ul>
+            <li><h3 class="span">Customer First </h3>  We strive to deliver the best products to every customer every day. The customer is the first priority in everything we do.</li>
+            <li><h3 class="span">Respect </h3> We treat each individual, those we serve and those with whom we work, with the highest professionalism and dignity.</li>
+            <li><h3 class="span">Innovation </h3>  We embrace change and work to improve all we do in a fiscally responsible manner.</li>
+            <li><h3 class="span">Collaboration </h3>  We have an international team and we work together to foster an environment of teamwork and develop win-win solutions.</li>
+        </ul>
     </div>
     <div class="about-us-img">
         <img src="https://medimaxindia.com/wp-content/uploads/2020/05/aboutus-1.png" alt="" >

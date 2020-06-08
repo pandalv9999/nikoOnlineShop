@@ -26,7 +26,7 @@
 <nav class="navbar navbar-inverse">
     <div  class="container-fluid">
         <div class="logo">
-            <img src="<c:url value="/resource/images/logo.png" /> " width="210px" height="130px" alt="logo-image"/>
+            <img src="<c:url value="/resource/images/niko.png" /> " height="130px" alt="logo-image"/>
         </div>
         <div class="padding"></div>
 

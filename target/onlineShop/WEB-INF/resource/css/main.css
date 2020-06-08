@@ -108,6 +108,13 @@ footer ul li {
     flex: 1;
 }
 
+.signature {
+    color: white;
+    padding-left: 20px;
+    background: steelblue;
+    font-size: 0.8em;
+}
+
 /*
 product grid
 */
