@@ -19,7 +19,7 @@
 <body>
 <%@ include file="navbar.jsp"%>
 <div class="form-container" style="margin-bottom: 19px">
-    <p class="form-body sub-title">Register</p>
+    <p class="sub-title">Register</p>
     <div class="form-content-6 form-body">
         <div class="form-row">
             <c:url value="/customer/registration" var="url"/>
@@ -140,7 +140,7 @@
                     </div>
 
                     <div class="form-actions">
-                        <button type="submit" class="list-btn" onclick="return Validate()">Submit</button>
+                        <button type="submit" class="btn" onclick="return Validate()">Submit</button>
                     </div>
                 </div>
             </form:form>

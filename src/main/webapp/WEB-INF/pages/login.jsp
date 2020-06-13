@@ -16,7 +16,7 @@
 </head>
 <body>
 <%@ include file="navbar.jsp" %>
-<div class="form-container" style="margin-top: 30px; margin-bottom: 180px;">
+<div class="form-container" style="margin-bottom: 180px;">
     <div>
         <div class="panel">
             <p class="sub-title">Sign In</p>
@@ -32,8 +32,7 @@
 
                 <form name="loginForm"
                       action="<c:url value="/login"/>" method="post">
-                    <fieldset>
-                        <br><br>
+                    <fieldset class="form-body">
                         <div class="mid">
                             <div class="form-group">
                                 <input class="form-control" placeholder="E-mail"
