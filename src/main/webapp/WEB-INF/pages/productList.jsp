@@ -8,7 +8,7 @@
 <%@ page contentType="text/html; charset=ISO-8859-1" language="java" isELIgnored="false" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>All Product</title>
 </head>
 <body>
 <%@ include file="navbar.jsp"%>

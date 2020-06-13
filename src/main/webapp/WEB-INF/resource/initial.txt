@@ -36,3 +36,7 @@ Color: White, Yellow.
 Quality Parameters: Each Mask is 100% Sterilized after packing(option available).
 Certification: CE and ISO22609:2004, ISO 9001:2015 certified.
 Features: Reduces heat inside the mask.;Removes humidity.;Removes exhaled carbon dioxide from the mask thereby helping in easy breathing.;The Filters of valves are made of silicone.', 'Medi-Max', 'N95 Face Mask with Exaltation Valves', 1.7, 1000, 'piece', 6);
+
+delete from users;
+delete from customer;
+delete from authorities;

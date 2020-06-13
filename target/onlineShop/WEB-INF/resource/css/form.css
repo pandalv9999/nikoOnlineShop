@@ -1,0 +1,49 @@
+/*. form. */
+
+.form-body {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05)
+}
+
+.form-content-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.form-content-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+
+
+.form-row {
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.form-group {
+    margin-bottom: 15px
+}
+
+
+.form-actions{
+    margin:0;
+    background-color: transparent;;
+    text-align: center;
+}
+
+.form-container {
+    margin-left:200px;
+    margin-right:200px;
+}
