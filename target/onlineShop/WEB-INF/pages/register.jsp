@@ -19,7 +19,7 @@
 <body>
 <%@ include file="navbar.jsp"%>
 <div class="form-container" style="margin-bottom: 19px">
-    <h1 class="form-body">Register</h1>
+    <p class="form-body sub-title">Register</p>
     <div class="form-content-6 form-body">
         <div class="form-row">
             <c:url value="/customer/registration" var="url"/>
@@ -28,7 +28,7 @@
                 <div class="form-content-12">
                     <div class="form-row">
                         <div>
-                            <center>User Details</center>
+                            <div style="text-align: center;">User Details<br><br></div>
                         </div>
                         <div class="form-content-6 form-group">
                             <form:label path="firstName">First Name</form:label>
@@ -56,9 +56,9 @@
                             <form:errors path="phone"/>
                         </div>
                     </div>
-                    <hr>
+                    <hr><br>
                     <div>
-                        <center>Shipping Address</center>
+                        <div style="text-align: center;">Shipping Address<br><br></div>
                     </div>
                     <div class="form-group">
                         <form:label path="shippingAddress.address">Address</form:label>
@@ -79,6 +79,7 @@
                         </div>
                     </div>
                     <div class="form-row">
+
                         <div class="form-content-6 form-group">
                             <form:label path="shippingAddress.country">Country</form:label>
                             <form:input type="text" placeholder="Enter your country"
@@ -91,9 +92,9 @@
                             <form:errors path="shippingAddress.zipCode"/>
                         </div>
                     </div>
-                    <hr>
+                    <hr><br>
                     <div>
-                        <center>Billing Address</center>
+                        <div style="text-align: center;">Billing Address<br><br></div>
                     </div>
                     <div class="form-group">
                         <form:label path="billingAddress.address">Address</form:label>

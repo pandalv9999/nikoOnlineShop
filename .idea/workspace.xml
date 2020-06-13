@@ -7,16 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e42e5b0-11ff-46ec-b3f4-93e7a4c0f476" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resource/css/form.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/onlineShop/model/ShippingAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/onlineShop/model/ShippingAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/onlineShop/controller/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/onlineShop/controller/HomePageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/productList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/productList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resource/initial.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resource/initial.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/onlineShop/model/ShippingAddress.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/onlineShop/model/ShippingAddress.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/onlineShop/WEB-INF/classes/onlineShop/model/ShippingAddress.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlineShop/WEB-INF/classes/onlineShop/model/ShippingAddress.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/onlineShop/WEB-INF/pages/productList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlineShop/WEB-INF/pages/productList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resource/css/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resource/css/form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resource/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resource/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/onlineShop/controller/HomePageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/onlineShop/controller/HomePageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/onlineShop/WEB-INF/classes/onlineShop/controller/HomePageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlineShop/WEB-INF/classes/onlineShop/controller/HomePageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/onlineShop/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlineShop/WEB-INF/pages/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/onlineShop/WEB-INF/pages/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlineShop/WEB-INF/pages/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/onlineShop/WEB-INF/resource/css/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlineShop/WEB-INF/resource/css/form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/onlineShop/WEB-INF/resource/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlineShop/WEB-INF/resource/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/onlineShop/WEB-INF/resource/initial.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlineShop/WEB-INF/resource/initial.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -184,7 +187,7 @@
       <workItem from="1590802397847" duration="8490000" />
       <workItem from="1591218225482" duration="55721000" />
       <workItem from="1591698872887" duration="418000" />
-      <workItem from="1592007839764" duration="6156000" />
+      <workItem from="1592007839764" duration="11195000" />
     </task>
     <servers />
   </component>
