@@ -17,7 +17,7 @@ public class HomePageController {
     @Autowired
     private ProductService productService;
 
-    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    @RequestMapping(value = {"/index", ""}, method = RequestMethod.GET)
     public ModelAndView sayIndex() {
         List<Product> products = productService.getAllProducts();
         ModelAndView modelAndView = new ModelAndView();
@@ -47,4 +47,7 @@ public class HomePageController {
         }
         return modelAndView;
     }
+
+
+
 }
