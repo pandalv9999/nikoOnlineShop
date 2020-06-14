@@ -22,7 +22,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 .antMatchers("/cart/**").hasAnyAuthority("ROLE_USER", "ROLE_ADMIN")
-                .antMatchers("/get*/**").hasAnyAuthority("ROLE_USER", "ROLE_ADMIN")
+//                .antMatchers("/get*/**").hasAnyAuthority("ROLE_USER", "ROLE_ADMIN")
                 .antMatchers("/admin*/**").hasAuthority("ROLE_ADMIN")
                 .anyRequest().permitAll()
                 .and()
@@ -30,7 +30,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-
         auth
                 .jdbcAuthentication()
                 .dataSource(dataSource)

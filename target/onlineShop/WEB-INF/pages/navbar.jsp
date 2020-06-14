@@ -39,7 +39,11 @@
             <ul class="nav navbar-right">
                 <c:if test="${!empty pageContext.request.userPrincipal.name}">
                     <li><a href="<c:url value="/index" />"><span class=""></span>Welcome ${pageContext.request.userPrincipal.name}</a></li>
+                    <security:authorize access="hasRole('ROLE_ADMIN')">
+                        <li><a href=" <c:url value="/admin/product/addProduct" />"> Manage Site</a></li>
+                    </security:authorize>
                     <li><a href="<c:url value="/cart/getCartById" />"><span class=""></span> Cart</a></li>
+                    <li><a href="<c:url value="/settings/getSettingById" />"><span class=""></span> Setting</a></li>
                     <li><a href="<c:url value="/logout" />"><span class=""></span> Logout</a></li>
                 </c:if>
             </ul>

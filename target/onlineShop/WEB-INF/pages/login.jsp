@@ -46,9 +46,9 @@
                             </div>
                         </div>
 
-                        <div class="checkbox">
+                        <div class="mid">
                             <c:if test="${not empty error}">
-                                <div class="error" style="color: #ff0000">${error}</div>
+                                <div class="error" style="color: #ff0000">${error}<br><br></div>
                             </c:if>
                         </div>
                         <!-- Change this to a button or input when using this as a form -->
