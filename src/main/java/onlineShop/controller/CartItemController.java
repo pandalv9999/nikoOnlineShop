@@ -37,32 +37,32 @@ public class CartItemController {
     @ResponseBody
     public String addCartItem(@PathVariable(value = "productId") int productId,
                               @PathVariable(value = "quantity") int quantity) {
-        return String.format("%d, %d", productId, quantity);
-//        Authentication loggedInUser = SecurityContextHolder.getContext().getAuthentication();
-//        String username = loggedInUser.getName();
-//        Customer customer = customerService.getCustomerByUserName(username);
-//
-//        Cart cart = customer.getCart();
-//        List<CartItem> cartItems = cart.getCartItems();
-//        Product product = productService.getProductById(productId);
-//
-//        for (int i = 0; i < cartItems.size(); i++) {
-//            CartItem cartItem = cartItems.get(i);
-//            if (product.getId() == (cartItem.getProduct().getId())) {
-//                cartItem.setQuantity(cartItem.getQuantity() + 1);
-//                cartItem.setPrice(cartItem.getQuantity() * cartItem.getProduct().getProductPrice());
-//                cartItemService.addCartItem(cartItem);
-//                return "SUCCESS";
-//            }
-//        }
-//
-//        CartItem cartItem = new CartItem();
-//        cartItem.setQuantity(1);
-//        cartItem.setProduct(product);
-//        cartItem.setPrice(product.getProductPrice());
-//        cartItem.setCart(cart);
-//        cartItemService.addCartItem(cartItem);
-//        return "SUCCESS";
+
+        Authentication loggedInUser = SecurityContextHolder.getContext().getAuthentication();
+        String username = loggedInUser.getName();
+        Customer customer = customerService.getCustomerByUserName(username);
+
+        Cart cart = customer.getCart();
+        List<CartItem> cartItems = cart.getCartItems();
+        Product product = productService.getProductById(productId);
+
+        for (int i = 0; i < cartItems.size(); i++) {
+            CartItem cartItem = cartItems.get(i);
+            if (product.getId() == (cartItem.getProduct().getId())) {
+                cartItem.setQuantity(cartItem.getQuantity() + quantity);
+                cartItem.setPrice(cartItem.getQuantity() * cartItem.getProduct().getProductPrice());
+                cartItemService.addCartItem(cartItem);
+                return "Successfully add " + quantity + " unit to cart!";
+            }
+        }
+
+        CartItem cartItem = new CartItem();
+        cartItem.setQuantity(quantity);
+        cartItem.setProduct(product);
+        cartItem.setPrice(product.getProductPrice());
+        cartItem.setCart(cart);
+        cartItemService.addCartItem(cartItem);
+        return "Successfully add " + quantity + " unit to cart!";
     }
 
     @RequestMapping(value = "/cart/removeCartItem/{cartItemId}", method = RequestMethod.DELETE)

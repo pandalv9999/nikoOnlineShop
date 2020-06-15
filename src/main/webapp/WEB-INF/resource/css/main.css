@@ -170,6 +170,7 @@ product list
 .product-list {
     padding-left : 300px;
     padding-right : 300px;
+    padding-bottom: 200px;
 }
 
 .product-image {

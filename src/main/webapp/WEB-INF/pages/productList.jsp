@@ -12,23 +12,23 @@
     <script>
         function validateQuantity(productId, unitInStock) {
 
-            var quantity = document.getElementById('productQuantity').value;
+            var quantity = document.getElementById('productQuantity' + productId).value;
             if (${pageContext.request.userPrincipal.name == null}) {
-                document.getElementById('errMsg' + productId).innerText = "";
+                document.getElementById('errMsg' + productId).innerHTML = "<br>";
                 document.getElementById('errMsg' + productId).innerText += "Please login first";
                 return;
             }
             if (quantity === "" || quantity === "0") {
-                document.getElementById('errMsg' + productId).innerText = "";
+                document.getElementById('errMsg' + productId).innerHTML = "<br>";
                 document.getElementById('errMsg' + productId).innerText += "Please enter a number!";
                 return;
             }
             if (quantity > unitInStock) {
-                document.getElementById('errMsg' + productId).innerText = "";
+                document.getElementById('errMsg' + productId).innerHTML = "<br>";
                 document.getElementById('errMsg' + productId).innerText += "Quantity exceeds units in stock!";
                 return;
             }
-            document.getElementById('errMsg' + productId).innerText = "";
+            document.getElementById('errMsg' + productId).innerHTML = "<br>";
             addToCart(productId, quantity);
         }
     </script>
@@ -66,14 +66,14 @@
                     <span id="errMsg${prod.id}" style="color: red"><br></span>
                     <div>
                         <span>Quantity: </span>
-                        <input type="number" id="productQuantity" style="width: 60px">
+                        <input type="number" id="productQuantity${prod.id}" style="width: 60px">
 
                     </div>
                     <button class="list-btn" onclick="validateQuantity(${prod.id}, ${prod.unitStock})">Add to Cart</button>
                     <a href="/onlineShop/getProductById/${prod.id}"><div class="list-btn">Detail</div></a>
                 </div>
             </div>
-        </c:forEach>>
+        </c:forEach>
 
     </div>
 
