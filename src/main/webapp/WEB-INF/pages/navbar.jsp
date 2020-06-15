@@ -18,8 +18,10 @@
     <link rel="stylesheet" type="text/css" href="<c:url value="/resource/css/main.css"/> ">
 <%--    <link rel="icon" type="image/x-icon" href="<c:url value="/WEB-INF/resource/images/favicon.png"/>"/>--%>
 <%--    <link rel="stylesheet" type="text/css" href="<c:url value="/WEB-INF/resource/bootstrap/css/bootstrap.min.css"/>">--%>
-<%--    <script src="<c:url value="/WEB-INF/resource/js/jquery.js"/>" type="javascript"></script>--%>
+    <script src="<c:url value="/resource/js/jquery.js"/>"></script>
 <%--    <script src="<c:url value="/WEB-INF/resource/bootstrap/js/bootstrap.min.js"/>" type="javascript"></script>--%>
+    <script src="<c:url value="/resource/js/apis.js"/>"></script>
+
 </head>
 
 <body>
@@ -38,7 +40,7 @@
             </ul>
             <ul class="nav navbar-right">
                 <c:if test="${!empty pageContext.request.userPrincipal.name}">
-                    <li><a href="<c:url value="/index" />"><span class=""></span>Welcome ${pageContext.request.userPrincipal.name}</a></li>
+                    <li><a href="<c:url value="/index" />"><span class=""></span>Welcome <span id="result"></span></a></li>
                     <security:authorize access="hasRole('ROLE_ADMIN')">
                         <li><a href=" <c:url value="/admin/product/addProduct" />"> Manage Site</a></li>
                     </security:authorize>
@@ -57,5 +59,9 @@
         </div>
     </div>
 </nav>
+<script>
+    //call after page loaded
+    loadName('${pageContext.request.userPrincipal.name}')
+</script>
 </body>
 </html>
