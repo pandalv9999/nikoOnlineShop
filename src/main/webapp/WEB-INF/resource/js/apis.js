@@ -16,6 +16,21 @@ function loadName(username) {
     );
 }
 
+function addToCart(productId, quantity) {
+    console.log(productId, quantity);
+    ajax('GET',
+        '/onlineShop/cart/add/' + productId + '/' + quantity,
+        null,
+        function(result) {
+            console.log("success");
+            document.getElementById('errMsg' + productId).textContent += result;
+        },
+        function () {
+            console.log("fail");
+            document.getElementById('errMsg' + productId).textContent += 'FAIL';
+        })
+}
+
 
 function ajax(method, url, data, successCallback, errorCallback) {
     var xhr = new XMLHttpRequest();

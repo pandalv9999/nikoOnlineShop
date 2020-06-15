@@ -9,6 +9,29 @@
 <html>
 <head>
     <title>All Product</title>
+    <script>
+        function validateQuantity(productId, unitInStock) {
+
+            var quantity = document.getElementById('productQuantity').value;
+            if (${pageContext.request.userPrincipal.name == null}) {
+                document.getElementById('errMsg' + productId).innerText = "";
+                document.getElementById('errMsg' + productId).innerText += "Please login first";
+                return;
+            }
+            if (quantity === "" || quantity === "0") {
+                document.getElementById('errMsg' + productId).innerText = "";
+                document.getElementById('errMsg' + productId).innerText += "Please enter a number!";
+                return;
+            }
+            if (quantity > unitInStock) {
+                document.getElementById('errMsg' + productId).innerText = "";
+                document.getElementById('errMsg' + productId).innerText += "Quantity exceeds units in stock!";
+                return;
+            }
+            document.getElementById('errMsg' + productId).innerText = "";
+            addToCart(productId, quantity);
+        }
+    </script>
 </head>
 <body>
 <%@ include file="navbar.jsp"%>
@@ -40,8 +63,14 @@
                     <c:if test="${prod.unitStock == 0}">
                         <div class="status"><p>Out Of Stock</p></div>
                     </c:if>
-                    <a href=""><div class="list-btn">Add to Card</div></a>
-                <a href="/onlineShop/getProductById/${prod.id}"><div class="list-btn">Detail</div></a>
+                    <span id="errMsg${prod.id}" style="color: red"><br></span>
+                    <div>
+                        <span>Quantity: </span>
+                        <input type="number" id="productQuantity" style="width: 60px">
+
+                    </div>
+                    <button class="list-btn" onclick="validateQuantity(${prod.id}, ${prod.unitStock})">Add to Cart</button>
+                    <a href="/onlineShop/getProductById/${prod.id}"><div class="list-btn">Detail</div></a>
                 </div>
             </div>
         </c:forEach>>

@@ -7,19 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e42e5b0-11ff-46ec-b3f4-93e7a4c0f476" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resource/js/apis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/onlineShop/controller/CartItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/onlineShop/dao/CartDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/onlineShop/dao/CartItemDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/onlineShop/service/CartItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/onlineShop/service/CartService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/onlineShop/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/onlineShop/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/onlineShop/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/onlineShop/controller/RegistrationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/navbar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resource/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resource/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/onlineShop/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/onlineShop/controller/HelloController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/onlineShop/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/onlineShop/controller/RegistrationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/onlineShop/WEB-INF/classes/onlineShop/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlineShop/WEB-INF/classes/onlineShop/controller/HelloController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/onlineShop/WEB-INF/classes/onlineShop/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlineShop/WEB-INF/classes/onlineShop/controller/RegistrationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/productList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/productList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/productPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/productPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resource/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resource/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resource/js/apis.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resource/js/apis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resource/js/productController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resource/js/productController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/onlineShop/WEB-INF/pages/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlineShop/WEB-INF/pages/navbar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/onlineShop/WEB-INF/resource/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlineShop/WEB-INF/resource/js/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/onlineShop/WEB-INF/pages/productList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlineShop/WEB-INF/pages/productList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/onlineShop/WEB-INF/pages/productPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlineShop/WEB-INF/pages/productPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/onlineShop/WEB-INF/resource/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlineShop/WEB-INF/resource/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/onlineShop/WEB-INF/resource/js/apis.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlineShop/WEB-INF/resource/js/apis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/onlineShop/WEB-INF/resource/js/productController.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlineShop/WEB-INF/resource/js/productController.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +40,9 @@
         <option value="spring-beans.schema" />
         <option value="Jsp File" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -187,7 +194,7 @@
       <workItem from="1590802397847" duration="8490000" />
       <workItem from="1591218225482" duration="55721000" />
       <workItem from="1591698872887" duration="418000" />
-      <workItem from="1592007839764" duration="28716000" />
+      <workItem from="1592007839764" duration="37983000" />
     </task>
     <servers />
   </component>
@@ -211,16 +218,11 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/onlineShop/controller/RegistrationController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/onlineShop/controller/CartItemController.java</url>
           <line>39</line>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
-        <watch expression="pageContext.request.userPrincipal.name" language="JSP" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

@@ -40,7 +40,7 @@
             </ul>
             <ul class="nav navbar-right">
                 <c:if test="${!empty pageContext.request.userPrincipal.name}">
-                    <li><a href="<c:url value="/index" />"><span class=""></span>Welcome <span id="result"></span></a></li>
+                    <li><a href="<c:url value="/index" />"><span class=""></span>Welcome, <span id="result"></span></a></li>
                     <security:authorize access="hasRole('ROLE_ADMIN')">
                         <li><a href=" <c:url value="/admin/product/addProduct" />"> Manage Site</a></li>
                     </security:authorize>
@@ -61,7 +61,9 @@
 </nav>
 <script>
     //call after page loaded
-    loadName('${pageContext.request.userPrincipal.name}')
+    <c:if test="${!empty pageContext.request.userPrincipal.name}">
+        loadName('${pageContext.request.userPrincipal.name}');
+    </c:if>
 </script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 var app = angular.module("myapp", []).controller(
-		"myController",
+		"productController",
 		function($scope, $http) {
 
 			var BASE_PATH = "http://localhost:8080/onlineShop";
@@ -12,10 +12,11 @@ var app = angular.module("myapp", []).controller(
 			}
 
 			$scope.addToCart = function(productId) {
-				$http.put(BASE_PATH + "/cart/add/" + productId)
-						.success(function() {
-							alert("Added Successfully");
-						})
+				console.log(productId)
+				// $http.get(BASE_PATH + "/cart/add/" + productId)
+				// 	.success(function() {
+				// 		alert("Added Successfully");
+				// 	})
 			}
 
 			$scope.refreshCart = function() {

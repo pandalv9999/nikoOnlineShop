@@ -13,7 +13,32 @@
     <link rel="icon" type="image/x-icon" href="<c:url value="/resource/images/favicon.png"/>" />
     <link rel="stylesheet" type="text/css" href="<c:url value="/resource/css/main.css"/>">
     <link rel="stylesheet" type="text/css" href="<c:url value="/resource/css/photoGalleryProduct.css"/> ">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="<c:url value="/resource/js/photoGallery.js"/>"></script>
+    <script src="<c:url value="/resource/js/apis.js"/>"></script>
+    <script>
+        function validateQuantity(productId, unitInStock) {
+
+            var quantity = document.getElementById('productQuantity').value;
+            if (${pageContext.request.userPrincipal.name == null}) {
+                document.getElementById('errMsg' + productId).innerText = "";
+                document.getElementById('errMsg').innerText += "Please login first";
+                return;
+            }
+            if (quantity === "" || quantity === "0") {
+                document.getElementById('errMsg'+ productId).innerText = "";
+                document.getElementById('errMsg'+ productId).innerText += "Please enter a number!";
+                return;
+            }
+            if (quantity > unitInStock) {
+                document.getElementById('errMsg'+ productId).innerText = "";
+                document.getElementById('errMsg'+ productId).innerText += "Quantity exceeds units in stock!";
+                return;
+            }
+            document.getElementById('errMsg'+ productId).innerText = "";
+            addToCart(productId, quantity);
+        }
+    </script>
 </head>
 <body>
 <%@ include file="navbar.jsp"%>
@@ -68,9 +93,15 @@
                     <span class="product-price">$${product.productPrice}</span><span class="product-unit"> / ${product.unit}</span>
                     <div class="status"><p>Unit in stock: ${product.unitStock}</p></div>
                 </div>
+                <div>
+                    <span>Quantity: </span>
+                    <input type="number" id="productQuantity" style="width: 60px">
+                    <button class="list-btn" onclick="validateQuantity(${product.id}, ${product.unitStock})" style="height: 30px; margin-left: 30px">Add to Cart</button>
+                </div>
 
-                <a href=""><div class="list-btn">Add to Cart</div></a>
+
             </div>
+            <span id="errMsg${product.id}" style="color: #ff0000"></span>
         </div>
         </div>
 
